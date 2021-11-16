@@ -1566,3 +1566,53 @@ body {
 .ac__item_link:hover {
   text-decoration: underline;
 }
+
+.acitem {
+  padding-left: 63px;
+  max-width: 1013px;
+  min-width: 100%;
+  padding-top: 35px;
+  padding-bottom: 48px;
+}
+.acitem__prev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 70px;
+}
+.acitem__prev_title {
+  max-width: 365px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #E31E24;
+  padding-left: 2px;
+}
+.acitem__prev_img {
+  padding-right: 35px;
+}
+.acitem__body_title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  margin-bottom: 8px;
+}
+.acitem__body_date {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  color: #9B9B9B;
+  margin-bottom: 48px;
+}
+.acitem__body_text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+}

@@ -40,41 +40,51 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	/*INFRASTRUCTURE TABS ===============================================================================================================*/
 
-	hideTabContent(infraTabsContent, infraTabs, 'tab-active');
-	showTabContent(0, infraTabsContent, infraTabs, 'tab-active');
+	if(infraTabs) {
+		hideTabContent(infraTabsContent, infraTabs, 'tab-active');
+		showTabContent(0, infraTabsContent, infraTabs, 'tab-active');
 
 
-	infraTabsParent.addEventListener('click', (e) => {
-		const target = e.target;
 
-		if (target && target.classList.contains('infra__tab')) {
-			infraTabs.forEach((item, i) => {
-				if (target === item) {
-					hideTabContent(infraTabsContent, infraTabs, 'tab-active');
-					showTabContent(i, infraTabsContent, infraTabs, 'tab-active');
-				}
-			})
-		}
-	});
+		infraTabsParent.addEventListener('click', (e) => {
+			const target = e.target;
+
+			if (target && target.classList.contains('infra__tab')) {
+				infraTabs.forEach((item, i) => {
+					if (target === item) {
+						hideTabContent(infraTabsContent, infraTabs, 'tab-active');
+						showTabContent(i, infraTabsContent, infraTabs, 'tab-active');
+					}
+				})
+			}
+		});
+	}
+	
+
+	
 
 
 	/*PLANNING SLIDER TABS ==============================================================================================================*/
 
-	hideTabContent(planTabsContent, planTabs, 'plan-active');
-	showTabContent(0, planTabsContent, planTabs, 'plan-active');
+	if(planTabs) {
+		hideTabContent(planTabsContent, planTabs, 'plan-active');
+		showTabContent(0, planTabsContent, planTabs, 'plan-active');
 
-	planTabsParent.addEventListener('click', (e) => {
-		const target = e.target;
+		planTabsParent.addEventListener('click', (e) => {
+			const target = e.target;
 
-		if(target && target.classList.contains('plan__tab')) {
-			planTabs.forEach((item, i) => {
-				if(target === item) {
-					hideTabContent(planTabsContent, planTabs, 'plan-active');
-					showTabContent(i, planTabsContent, planTabs, 'plan-active');
-				}
-			})
-		}
-	})
+			if(target && target.classList.contains('plan__tab')) {
+				planTabs.forEach((item, i) => {
+					if(target === item) {
+						hideTabContent(planTabsContent, planTabs, 'plan-active');
+						showTabContent(i, planTabsContent, planTabs, 'plan-active');
+					}
+				})
+			}
+		})
+	}
+
+	
 
 
 	/*Plannin section slider*/
@@ -111,22 +121,27 @@ document.addEventListener('DOMContentLoaded', () => {
 	const moveTabsParent = document.querySelector('.move__tabs');
 	const moveTabsContent = document.querySelectorAll('.move__body_item');
 
-	hideTabContent(moveTabsContent, moveTabs, 'move-active');
-	showTabContent(0, moveTabsContent, moveTabs, 'move-active');
+	if(moveTabs) {
+		hideTabContent(moveTabsContent, moveTabs, 'move-active');
+		showTabContent(0, moveTabsContent, moveTabs, 'move-active');
 
 
-	moveTabsParent.addEventListener('click', (e) => {
-		let target = e.target;
+		moveTabsParent.addEventListener('click', (e) => {
+			let target = e.target;
 
-		if(target && target.classList.contains('move__tab')) {
-			moveTabs.forEach((item, i) => {
-				if (target === item) {
-					hideTabContent(moveTabsContent, moveTabs, 'move-active');
-					showTabContent(i, moveTabsContent, moveTabs, 'move-active');
-				}
-			})
-		}
-	});
+			if(target && target.classList.contains('move__tab')) {
+				moveTabs.forEach((item, i) => {
+					if (target === item) {
+						hideTabContent(moveTabsContent, moveTabs, 'move-active');
+						showTabContent(i, moveTabsContent, moveTabs, 'move-active');
+					}
+				})
+			}
+		});
+	}
+
+
+	
 
 
 
