@@ -91,6 +91,11 @@ document.addEventListener('DOMContentLoaded', () => {
 	const planSlider = new Swiper('.plan__body_item', {
 		slidesPerView: 1,
 		spaceBetween: 10,
+		navigation: {
+			nextEl: '.plan-next',
+    		prevEl: '.plan-prev',
+
+		}
 	});
 
 
@@ -101,7 +106,15 @@ document.addEventListener('DOMContentLoaded', () => {
 	const gallerySlider = new Swiper('.gallery__body', {
 		slidesPerView: 1,
 		spaceBetween: 10,
-		width: 703
+		width: 703,
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'progressbar',
+		},
+		navigation: {
+			prevEl: '.gallery-prev',
+			nextEl: '.gallery-next'
+		}
 	});
 
 
@@ -110,7 +123,15 @@ document.addEventListener('DOMContentLoaded', () => {
 	/*MOVEMENT SECTION SLIDER*/
 	const moveSlider = new Swiper('.move__body_item', {
 		slidesPerView: 3,
-		spaceBetween: 32
+		spaceBetween: 32,
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'progressbar',
+		},
+		navigation: {
+			prevEl: '.move-prev',
+			nextEl: '.move-next'
+		}
 	});
 
 

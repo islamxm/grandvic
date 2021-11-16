@@ -7,7 +7,7 @@
 	}
 
 	&__body {
-
+		padding-bottom: 45px;
 
 		&_wrapper {
 
@@ -16,5 +16,36 @@
 		&_slide {
 
 		}
+	}
+
+	.swiper-pagination {
+		height: 4px;
+		bottom: 0 !important;
+		top: unset;
+		width: 80%;
+		right: 0;
+		left: unset;
+		margin-bottom: 10px;
+	}
+
+
+
+	.swiper-pagination-progressbar-fill {
+		background-color: $red;
+		height: 100%;
+	}
+
+	&-prev {
+		z-index: 1000;
+		left: 5%;
+		bottom: 0;
+		position: absolute;
+	}
+
+	&-next {
+		z-index: 1000;
+		left: 10%;
+		bottom: 0;
+		position: absolute;
 	}
 }

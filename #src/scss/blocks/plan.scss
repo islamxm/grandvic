@@ -64,7 +64,7 @@
 	&__body {
 
 		&_item {
-
+			padding-bottom: 30px;
 
 			&_wrapperr {
 
@@ -109,5 +109,21 @@
 
 			}
 		}
+	}
+
+	&-prev {
+		position: absolute;
+		bottom: 0;
+		left: 45%;
+		z-index: 10000;
+		cursor: pointer;
+	}
+
+	&-next {
+		position: absolute;
+		bottom: 0;
+		right: 45%;
+		z-index: 10000;
+		cursor: pointer;
 	}
 }

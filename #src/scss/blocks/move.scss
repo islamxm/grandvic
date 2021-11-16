@@ -54,10 +54,41 @@
 	&__body {
 
 		&_item {
-
+			padding-bottom: 45px;
 			&_slide {
 
 			}
 		}
+	}
+
+	.swiper-pagination {
+		height: 4px;
+		bottom: 0 !important;
+		top: unset;
+		width: 85%;
+		right: 0;
+		left: unset;
+		margin-bottom: 10px;
+	}
+
+	.swiper-pagination-progressbar-fill {
+		background-color: $red;
+		height: 100%;
+	}
+
+	&-prev {
+		z-index: 1000;
+		left: 0;
+		bottom: 0;
+		position: absolute;
+		cursor: pointer;
+	}
+
+	&-next {
+		z-index: 1000;
+		left: 5%;
+		bottom: 0;
+		position: absolute;
+		cursor: pointer;
 	}
 }
