@@ -1,4 +1,72 @@
+import Swiper from './libs/swiper.js';
+
 document.addEventListener('DOMContentLoaded', () => {
+
+
+	/*INFRASTRUCTURE TABS*/
+	const infraTabs = document.querySelectorAll('.infra__tab');
+	const infraTabsParent = document.querySelector('.infra__tabs');
+	const infraTabsContent = document.querySelectorAll('.infra__content');
+
+
+	function hideInfraContents() {
+		infraTabsContent.forEach( i => {
+			i.classList.add('hide');
+			i.classList.remove('show', 'fade');
+		});
+
+		infraTabs.forEach(i => {
+			i.classList.remove('tab-active');
+		});
+	}
+
+
+	function showInfraContent(i = 0) {
+		infraTabsContent[i].classList.add('show', 'fade');
+		infraTabsContent[i].classList.remove('hide');
+		infraTabs[i].classList.add('tab-active');
+	}
+
+	hideInfraContents();
+	showInfraContent();
+
+
+	infraTabsParent.addEventListener('click', (e) => {
+		const target = e.target;
+
+		if (target && target.classList.contains('infra__tab')) {
+			infraTabs.forEach((item, i) => {
+				if (target === item) {
+					hideInfraContents();
+					showInfraContent(i);
+				}
+			})
+		}
+	});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	/*Infrastructure Tabs*/
 
