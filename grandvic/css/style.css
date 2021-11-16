@@ -1648,3 +1648,31 @@ body {
   color: #9B9B9B;
   margin-bottom: 48px;
 }
+
+.success {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80vh;
+}
+.success__body {
+  max-width: 363px;
+}
+.success__title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.success__sub {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
