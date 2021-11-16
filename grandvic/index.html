@@ -5,6 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>GrandVic</title>
+        <!-- Scripts -->
+        <script defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=e8786978-c0d2-4516-bca8-c3b3ded68dd3" type="text/javascript"></script>
+        <script defer src="./js/bundle.js"></script>
+        
+        <!-- Styles -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
@@ -21,25 +26,25 @@
                     <nav class="aside__nav">
                         <ul class="aside__nav_list">
                             <li>
-                                <a href="#" class="aside__nav_item nav-active">Главная</a>
+                                <a href="#main" class="aside__nav_item nav-active">Главная</a>
                             </li>
                             <li>
-                                <a href="#" class="aside__nav_item">О комлексе</a>
+                                <a href="#about" class="aside__nav_item">О комлексе</a>
                             </li>
                             <li>
-                                <a href="#" class="aside__nav_item">Преимущества</a>
+                                <a href="#ben" class="aside__nav_item">Преимущества</a>
                             </li>
                             <li>
-                                <a href="#" class="aside__nav_item">Инфраструктура</a>
+                                <a href="#infra" class="aside__nav_item">Инфраструктура</a>
                             </li>
                             <li>
-                                <a href="#" class="aside__nav_item">Условия приобретения</a>
+                                <a href="#cond" class="aside__nav_item">Условия приобретения</a>
                             </li>
                             <li>
-                                <a href="#" class="aside__nav_item">Типовые планировки</a>
+                                <a href="#plan" class="aside__nav_item">Типовые планировки</a>
                             </li>
                             <li>
-                                <a href="#" class="aside__nav_item">Галерея</a>
+                                <a href="#gallery" class="aside__nav_item">Галерея</a>
                             </li>
                             <li>
                                 <a href="#" class="aside__nav_item">Ход строительства</a>
@@ -64,8 +69,8 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="tel:+77172777777" class="aside__contacts_item tel">
-                                    +7 7172 77-77-77
+                                <a href="tel:+77172677373" class="aside__contacts_item tel">
+                                    +7 7172 67-73-73
                                 </a>
                             </li>
                         </ul>
@@ -89,9 +94,9 @@
                             <a href="#" class="main__top_item">Келлеры</a>
                         </li>
                     </ul>
-                    <button class="main__top_download">Скачать презентацию</button>
+                    <a href="#" download class="main__top_download">Скачать презентацию</a>
                 </div>
-                <section class="prev">
+                <section class="prev" id="main">
                     <div class="prev__inner">
                         <img src="./img/prev@1x.png" alt="">
                         <a class="prev-left" href="#">
@@ -108,12 +113,12 @@
                         <a href="#" class="prev-bottom">
                             <svg width="658" height="545" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M329.62 22.896l61.319 19.483-12.481 122.311-38.528 32.472-44.496-19.483-40.698 35.156 139.459 61.718 173.103-174.265 2.713-9.2 22.791 6.494-2.171 8.118 41.241 12.988 2.171-8.118 23.333 8.118-36.899 127.723 11.395 4.871-6.512 9.741-8.139-3.247-1.086 6.495-4.341 4.87 5.427 2.165-7.055 9.742-5.426-1.624-1.628 3.247-32.559 40.59 8.683 3.247-8.683 12.989-7.054-2.165-45.582 63.862 5.969 2.706-10.31 15.153-7.054-3.788-45.04 60.614 7.055 4.871-10.311 16.236-7.597-3.788-14.108 18.4 6.511 3.789-11.395 16.777-6.512-3.789-11.395 15.695L23.027 314.061.237 162.525l67.83-39.507 2.713 7.577 145.428-86.05V38.05L283.496.707l46.124 14.612v7.577z" fill="#F2EC58" fill-opacity=".3"/></svg>
                         </a>
-                        <a href="#" class="prev__btn">Выбрать квартиру</a>
+                        <a href="#" target="_blank" class="prev__btn">Выбрать квартиру</a>
                         
                     </div>
                 </section>
                 <div class="content">
-                    <section class="about">
+                    <section class="about" id="about">
                         <h2 class="about__title sec-title">
                         О комплексе
                         </h2>
@@ -144,7 +149,7 @@
                             </div>
                         </div>
                     </section>
-                    <section class="ben">
+                    <section class="ben" id="ben">
                         <h2 class="ben__title sec-title">
                         Преимущества
                         </h2>
@@ -168,14 +173,13 @@
                                     
                                     <div class="ben__col_item_descr">
                                         <h3 class="ben__col_item_title">
-                                            Разумные метры
+                                        Разумные метры
                                         </h3>
                                         <div class="ben__col_item_text">
                                             При проектировании квартир ЖК «Grand Victoria» использовался принцип «Разумные метры», который позволил эффективно использовать каждый квадратный метр площади. Все планировки функциональны - нет слишком длинных коридоров, тупиков и тёмных углов. Рациональные, эргономичные и продуманные планировки позволят функционально разместить мебель и сделать пространство комфортным
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="ben__col_item">
                                     <div class="ben__col_item_img">
                                         <img src="./img/ben2@1x.png" alt="">
@@ -183,7 +187,7 @@
                                     
                                     <div class="ben__col_item_descr">
                                         <h3 class="ben__col_item_title">
-                                            Технология строительства
+                                        Технология строительства
                                         </h3>
                                         <div class="ben__col_item_text">
                                             Проект возводится по уникальному методу индустриального строительства. Все изделия выпускаются в заводских условиях - ровные стены, готовые под оклейку обоями или покраску с проведеннымии каналами для электропроводки, трехслойные наружные фасады, отвечающие всем стандартам качества, безопасности и архитектурной эстетики.
@@ -191,7 +195,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="ben__col_item">
                                     <div class="ben__col_item_img">
                                         <img src="./img/ben3@1x.png" alt="">
@@ -199,7 +202,7 @@
                                     
                                     <div class="ben__col_item_descr">
                                         <h3 class="ben__col_item_title">
-                                            Паркинг
+                                        Паркинг
                                         </h3>
                                         <div class="ben__col_item_text">
                                             Подземный паркинг с автоматизированным контролем доступа. Он оборудован системами видеонаблюдения, вентиляции и дымоудаления. Подземный паркинг рассчитан на 358 машиномест. Также имеются специальные парковочные места для водителей с ограниченными возможностями. Предусмотрено также 16 мотомест. Есть отдельная парковка для гостевых автомобилей.
@@ -207,16 +210,11 @@
                                     </div>
                                 </div>
                             </div>
-
-
-
                             <div class="ben__col ben__col_right">
-
-
                                 <div class="ben__col_item">
                                     <div class="ben__col_item_descr">
                                         <h3 class="ben__col_item_title">
-                                            Идеальные планировки
+                                        Идеальные планировки
                                         </h3>
                                         <div class="ben__col_item_text">
                                             В проекте предусмотрены квартиры различной комнатности от 44 до 117 квадратных метров. Компактные однушки станут отличным вариантом для тех, кто ещё не обзавёлся семьёй. Функциональные двухкомнатные квартиры подойдут молодым парам, а для семей с детьми запроектированы просторные трёхкомнатные и четырёхкомнатные квартиры с большими площадями
@@ -226,11 +224,10 @@
                                         <img src="./img/ben4@1x.png" alt="">
                                     </div>
                                 </div>
-
                                 <div class="ben__col_item">
                                     <div class="ben__col_item_descr">
                                         <h3 class="ben__col_item_title">
-                                            Идеальные планировки
+                                        Идеальные планировки
                                         </h3>
                                         <div class="ben__col_item_text">
                                             В проекте предусмотрены квартиры различной комнатности от 44 до 117 квадратных метров. Компактные однушки станут отличным вариантом для тех, кто ещё не обзавёлся семьёй. Функциональные двухкомнатные квартиры подойдут молодым парам, а для семей с детьми запроектированы просторные трёхкомнатные и четырёхкомнатные квартиры с большими площадями
@@ -240,11 +237,10 @@
                                         <img src="./img/ben5@1x.png" alt="">
                                     </div>
                                 </div>
-
                                 <div class="ben__col_item">
                                     <div class="ben__col_item_descr">
                                         <h3 class="ben__col_item_title">
-                                            Идеальные планировки
+                                        Идеальные планировки
                                         </h3>
                                         <div class="ben__col_item_text">
                                             В проекте предусмотрены квартиры различной комнатности от 44 до 117 квадратных метров. Компактные однушки станут отличным вариантом для тех, кто ещё не обзавёлся семьёй. Функциональные двухкомнатные квартиры подойдут молодым парам, а для семей с детьми запроектированы просторные трёхкомнатные и четырёхкомнатные квартиры с большими площадями
@@ -257,8 +253,7 @@
                             </div>
                         </div>
                     </section>
-
-                    <section class="infra">
+                    <section class="infra" id="infra">
                         <h2 class="infra__title sec-title">Инфраструктура</h2>
                         <div class="infra__body">
                             <div class="infra__tabs">
@@ -267,7 +262,6 @@
                                 <div class="infra__tab">Безопасный двор</div>
                             </div>
                             <div class="infra__content">
-
                                 <div class="infra__content_item">
                                     <div class="infra__content_item_img">
                                         <img width="267" height="209" src="./img/infra1@1x.png" alt="">
@@ -276,17 +270,14 @@
                                         220 м. до Казахского драматического театра
                                     </div>
                                 </div>
-
                                 <div class="infra__content_item">
                                     <div class="infra__content_item_img">
                                         <img width="267" height="209" src="./img/infra2@1x.png" alt="">
                                     </div>
                                     <div class="infra__content_item_descr">
                                         Вид из окон на мечеть «Хазрет-Султан»
-
                                     </div>
                                 </div>
-
                                 <div class="infra__content_item">
                                     <div class="infra__content_item_img">
                                         <img width="267" height="209" src="./img/infra3@1x.png" alt="">
@@ -295,7 +286,6 @@
                                         5 мин. до Национального музея Республики Казахстан
                                     </div>
                                 </div>
-
                                 <div class="infra__content_item">
                                     <div class="infra__content_item_img">
                                         <img width="267" height="209" src="./img/infra4@1x.png" alt="">
@@ -304,7 +294,6 @@
                                         1 км. до Президентского парка
                                     </div>
                                 </div>
-
                                 <div class="infra__content_item">
                                     <div class="infra__content_item_img">
                                         <img width="267" height="209" src="./img/infra5@1x.png" alt="">
@@ -313,7 +302,6 @@
                                         7 мин. ходьбы до Дворца творчества «Шабыт»
                                     </div>
                                 </div>
-
                                 <div class="infra__content_item">
                                     <div class="infra__content_item_img">
                                         <img width="267" height="209" src="./img/infra6@1x.png" alt="">
@@ -322,37 +310,229 @@
                                         800 м. до монумента «Қазақ Елі»
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </section>
-
-
-                    <section class="cond">
+                    <section class="cond" id="infra">
                         <h2 class="cond__title sec-title">
-                            Условия приобретения
+                        Условия приобретения
                         </h2>
                         <div class="cond__list">
-                            <div class="cond__item cond-active">
-                                <div class="cond__item_num">340 000 тг</div>
-                                <div class="cond__item_name">При 100% оплате</div>
-                            </div>
-
                             <div class="cond__item">
-                                <div class="cond__item_num">360 000 тг</div>
-                                <div class="cond__item_name">В рассрочку</div>
+                                <div class="cond__item_img">
+                                    <svg width="59" height="48" viewBox="0 0 59 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M58.8405 29.2315C58.7108 29.0099 58.5114 28.8374 58.2734 28.7411L54.0419 27.009L58.4245 24.4282C58.9786 24.1039 59.1649 23.3919 58.8405 22.8378C58.7108 22.6162 58.5114 22.4437 58.2734 22.3474L54.0419 20.6153L58.4245 18.0346C58.8073 17.8043 59.0242 17.375 58.9825 16.9302C58.9489 16.4909 58.6698 16.1082 58.2618 15.9421L41.6033 9.11829L33.3962 5.63083C33.2629 5.57808 33.1209 5.55062 32.9777 5.54946L19.6091 0.109019C19.2808 -0.0272824 18.9082 -0.00577616 18.5977 0.167144L0.683762 10.2343C0.110366 10.523 -0.120388 11.222 0.168345 11.7954C0.299996 12.0569 0.525664 12.2592 0.800011 12.3616L5.12446 14.1519L0.683762 16.628C0.125042 16.9442 -0.0715635 17.6536 0.244633 18.2123C0.370327 18.4343 0.565334 18.6087 0.800011 18.7088L5.12446 20.499L0.707012 22.9751C0.116324 23.2268 -0.158314 23.9098 0.0933644 24.5003C0.22458 24.8082 0.482071 25.0445 0.800011 25.149L5.12446 26.9276L0.707012 29.4037C0.148292 29.7199 -0.0483138 30.4293 0.267883 30.988C0.393577 31.21 0.588584 31.3844 0.823261 31.4845L15.8542 37.8666C15.9091 37.9066 15.9676 37.9416 16.0286 37.9712L24.2474 41.4587L39.3597 47.8872C39.6997 48.0315 40.0882 48.0057 40.4059 47.8175L58.4245 37.2156C58.9786 36.8913 59.1649 36.1792 58.8405 35.6252C58.7108 35.4036 58.5114 35.2311 58.2734 35.1348L54.0419 33.4026L58.4245 30.8219C58.9786 30.4977 59.1647 29.7856 58.8405 29.2315ZM55.216 23.5914L39.7201 32.7169L25.8632 26.8347V22.9637L39.3481 28.6947C39.4915 28.7557 39.6457 28.7874 39.8015 28.7877C40.0101 28.7877 40.2149 28.7315 40.3943 28.625L51.5193 22.0802L55.216 23.5914ZM55.2625 17.1861L39.7201 26.3116L27.1303 20.9642L41.3127 11.4899L55.2625 17.1861ZM15.2846 35.1233L3.8806 30.2757L7.79818 28.0786L15.2962 31.2638L15.2846 35.1233ZM15.2846 28.7296L3.8806 23.882L7.79818 21.6617L15.2962 24.8469L15.2846 28.7296ZM15.2846 22.3359L3.8806 17.5L7.79818 15.3029L15.2962 18.4881L15.2846 22.3359ZM3.8806 11.1063L19.2487 2.46901L30.3969 7.03759L16.3541 16.4072L3.8806 11.1063ZM24.0498 20.2434C23.7293 20.4599 23.5377 20.8216 23.5383 21.2083V38.6456L17.6212 36.1346V18.3602L33.0242 8.09545L38.7552 10.4204L24.0498 20.2434ZM55.216 36.3788L39.7201 45.4927L25.8632 39.6105V35.751L39.3481 41.424C39.6881 41.5682 40.0765 41.5424 40.3943 41.3542L51.5193 34.8094L55.216 36.3788ZM39.7201 39.099L25.8632 33.2168V29.3573L39.3597 35.0884C39.6997 35.2327 40.0882 35.2068 40.4059 35.0186L51.531 28.4738L55.216 29.9851L39.7201 39.099Z" fill="black"/>
+                                    </svg>
+                                </div>
+                                <div class="cond__item_descr">
+                                    <div class="cond__item_num">340 000 тг</div>
+                                    <div class="cond__item_name">При 100% оплате</div>
+                                </div>
                             </div>
-
                             <div class="cond__item">
-                                <div class="cond__item_num">380 000 тг</div>
-                                <div class="cond__item_name">В ипотеку</div>
+                                <div class="cond__item_img">
+                                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M31 8V16" stroke="black" stroke-width="2" stroke-miterlimit="5"/>
+                                        <path d="M31 56V48" stroke="black" stroke-width="2" stroke-miterlimit="5"/>
+                                        <path d="M55 32H47" stroke="black" stroke-width="2" stroke-miterlimit="5"/>
+                                        <path d="M7 32H15" stroke="black" stroke-width="2" stroke-miterlimit="5"/>
+                                        <path d="M47.97 15.03L31 32" stroke="black" stroke-width="2" stroke-miterlimit="5"/>
+                                        <path d="M14.0312 48.97L19.6913 43.31" stroke="black" stroke-width="2" stroke-miterlimit="5"/>
+                                        <path d="M47.9686 48.97L42.3086 43.31" stroke="black" stroke-width="2" stroke-miterlimit="5"/>
+                                        <path d="M14.0312 15.03L19.6913 20.69" stroke="black" stroke-width="2" stroke-miterlimit="5"/>
+                                        <path d="M31 56C44.2548 56 55 45.2548 55 32C55 18.7452 44.2548 8 31 8C17.7452 8 7 18.7452 7 32C7 45.2548 17.7452 56 31 56Z" stroke="black" stroke-width="2" stroke-miterlimit="5"/>
+                                    </svg>
+                                </div>
+                                <div class="cond__item_descr">
+                                    <div class="cond__item_num">360 000 тг</div>
+                                    <div class="cond__item_name">В рассрочку</div>
+                                </div>
+                            </div>
+                            <div class="cond__item">
+                                <div class="cond__item_img">
+                                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M45.5281 4.47178C45.9349 4.87858 45.9349 5.53813 45.5281 5.94492L5.94474 45.5283C5.53794 45.9351 4.8784 45.9351 4.4716 45.5283C4.0648 45.1215 4.0648 44.4619 4.4716 44.0551L44.0549 4.47178C44.4617 4.06499 45.1213 4.06499 45.5281 4.47178Z" fill="black"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M36.4585 27.0833C32.5434 27.0833 29.1668 30.6956 29.1668 35.4167C29.1668 40.1378 32.5434 43.75 36.4585 43.75C40.3736 43.75 43.7502 40.1378 43.7502 35.4167C43.7502 30.6956 40.3736 27.0833 36.4585 27.0833ZM27.0835 35.4167C27.0835 29.7824 31.1689 25 36.4585 25C41.7481 25 45.8335 29.7824 45.8335 35.4167C45.8335 41.0509 41.7481 45.8333 36.4585 45.8333C31.1689 45.8333 27.0835 41.0509 27.0835 35.4167Z" fill="black"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5415 6.25002C9.62638 6.25002 6.24984 9.86225 6.24984 14.5834C6.24984 19.3045 9.62638 22.9167 13.5415 22.9167C17.4566 22.9167 20.8332 19.3045 20.8332 14.5834C20.8332 9.86225 17.4566 6.25002 13.5415 6.25002ZM4.1665 14.5834C4.1665 8.94912 8.25188 4.16669 13.5415 4.16669C18.8311 4.16669 22.9165 8.94912 22.9165 14.5834C22.9165 20.2176 18.8311 25 13.5415 25C8.25188 25 4.1665 20.2176 4.1665 14.5834Z" fill="black"/>
+                                    </svg>
+                                </div>
+                                <div class="cond__item_descr">
+                                    <div class="cond__item_num">380 000 тг</div>
+                                    <div class="cond__item_name">В ипотеку</div>
+                                </div>
                             </div>
                         </div>
                     </section>
+                    <section class="video" id="infra">
+                        <h2 class="video__title sec-title">
+                        Видеопрезентация
+                        </h2>
+                        <div class="video__content">
+                            <!-- video -->
+                            <img src="./img/play.svg" alt="">
+                        </div>
+                        <div class="video__btns">
+                            <a href="#" class="video__btn">Во дворе </a>
+                            <a href="#" class="video__btn">На улице </a>
+                        </div>
+                    </section>
+                    <section class="plan" id="plan">
+                        <h2 class="plan__title sec-title">
+                        Типовые планировки
+                        </h2>
+                        <div class="plan__content">
+                            <div class="plan__tabs">
+                                <div class="plan__tab plan-active">1-комнатные</div>
+                                <div class="plan__tab">2-х комнатные</div>
+                                <div class="plan__tab">3-х комнатные</div>
+                                <div class="plan__tab">4-х комнатные</div>
+                            </div>
+                            <div class="plan__body">
+                                <div class="plan__body_item swiper">
+                                    <div class="plan__body_item_wrapper swiper-wrapper">
+                                        <div class="plan__body_item_slide swiper-slide">
+                                            <div class="item__descr">
+                                                <h3 class="item__descr_title">ВАРИАНТ 1</h3>
+                                                <ul class="item__descr_list">
+                                                    <li class="item__descr_pos">
+                                                        <div class="item__descr_pos_name">Пятно</div>
+                                                        <div class="item__descr_pos_info">1, 2, 3, 4</div>
+                                                    </li>
+                                                    <li class="item__descr_pos">
+                                                        <div class="item__descr_pos_name">Этажи</div>
+                                                        <div class="item__descr_pos_info">2-9</div>
+                                                    </li>
+                                                    <li class="item__descr_pos">
+                                                        <div class="item__descr_pos_name">Комнат</div>
+                                                        <div class="item__descr_pos_info">1</div>
+                                                    </li>
+                                                    <li class="item__descr_pos">
+                                                        <div class="item__descr_pos_name">Площадь</div>
+                                                        <div class="item__descr_pos_info">44, 10</div>
+                                                    </li>
+                                                    <li class="item__descr_pos">
+                                                        <div class="item__descr_pos_name">Кухня</div>
+                                                        <div class="item__descr_pos_info">12,46</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="plan__img">
+                                                <img src="./img/plan.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="gallery" id="gallery">
+                        <h2 class="gallery__title sec-title">Галерея</h2>
+                        
+                        <div class="gallery__body swiper">
+                            <div class="gallery__body_wrapper swiper-wrapper">
+                                <div class="gallery__body_item swiper-slide">
+                                    <img src="./img/gallery1.png" alt="">
+                                </div>
+                                <div class="gallery__body_item swiper-slide">
+                                    <img src="./img/gallery2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="move">
+                        <h2 class="move__title sec-title">
+                        Ход строительства
+                        </h2>
+                        <div class="move__tabs">
+                            <div class="move__tab">Декабрь 2021</div>
+                            <div class="move__tab">Январь 2022</div>
+                            <div class="move__tab">Март 2022</div>
+                            <div class="move__tab">Апрель 2022</div>
+                            <div class="move__tab">Май 2022</div>
+                            <div class="move__tab">Июнь 2022</div>
+                            <div class="move__tab">Июль 2022</div>
+                            <div class="move__tab">Сентябрь 2022</div>
+                            <div class="move__tab">Октябрь 2022</div>
+                            <div class="move__tab">Ноябрь 2022</div>
+                            <div class="move__tab">Декабрь 2022</div>
+                            <div class="move__tab">Январь 2023</div>
+                            <div class="move__tab">Февраль 2023</div>
+                            <div class="move__tab">Март 2023</div>
+                            <div class="move__tab">Апрель 2023</div>
+                            <div class="move__tab">Май 2023</div>
+                        </div>
+                    </section>
+                    <section class="news" id="news">
+                        <h2 class="news__title sec-title">
+                        Новости
+                        </h2>
+                        <div class="news__body">
+                            <div class="news__item">
+                                <div class="news__item_img">
+                                    <img src="./img/news.png" alt="">
+                                    <div class="news__item_img_date">25 января 2022</div>
+                                </div>
+                                <h3 class="news__item_title">Строительство ЖК «Grand Victoria» выходит на финишную прямую</h3>
+                            </div>
+                            <div class="news__item">
+                                <div class="news__item_img">
+                                    <img src="./img/news.png" alt="">
+                                    <div class="news__item_img_date">25 января 2022</div>
+                                </div>
+                                <h3 class="news__item_title">Строительство ЖК «Grand Victoria» выходит на финишную прямую</h3>
+                            </div>
+                            <div class="news__item">
+                                <div class="news__item_img">
+                                    <img src="./img/news.png" alt="">
+                                    <div class="news__item_img_date">25 января 2022</div>
+                                </div>
+                                <h3 class="news__item_title">Строительство ЖК «Grand Victoria» выходит на финишную прямую</h3>
+                            </div>
+                            <div class="news__item">
+                                <div class="news__item_img">
+                                    <img src="./img/news.png" alt="">
+                                    <div class="news__item_img_date">25 января 2022</div>
+                                </div>
+                                <h3 class="news__item_title">Строительство ЖК «Grand Victoria» выходит на финишную прямую</h3>
+                            </div>
+                        </div>
+                        <a href="#" class="news__more">Все новости</a>
+                    </section>
+                    <section class="feed" id="feed">
+                        <h2 class="feed__title">
+                        Получите консультацию
+                        </h2>
+                        <form class="feed__form">
+                            <div class="feed__form_body">
+                                <div class="feed__form_name">
+                                    <label for="">Имя</label>
+                                    <input type="text" placeholder="Введите имя">
+                                </div>
+                                <div class="feed__form_tel">
+                                    <label for="">Телефон</label>
+                                    <input type="tel" placeholder="+ 7 ">
+                                </div>
+                                <input class="feed__form_btn" type="submit" value="Получить консультацию">
+                            </div>
+                            <div class="feed__form_agree">Нажимая кнопку “Получить консультацию” вы соглашаетесь с условиями обработки личных данных</div>
+                        </form>
+                    </section>
+                    <section class="map">
+                        <div class="map__body" id="map">
+                            
+                        </div>
+                        
+                    </section>
+                    <div class="footer">
+                        <div class="footer__copy">© 2021 ЖК «Grand Victoria»</div>
+                        <div class="footer__law">
+                            Реализация квартир, офисов и парковочных мест производится в соответствии с Законом Республики Казахстан
+                            от 7 апреля 2016 года № 486-V «О долевом участии в жилищном строительстве».
+                        </div>
+                    </div>
                 </div>
             </main>
         </div>
         
-        <script src="./js/bundle.js"></script>
     </body>
 </html>

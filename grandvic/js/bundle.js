@@ -2,5 +2,5 @@
 /*!***************************!*\
   !*** ./#src/js/script.js ***!
   \***************************/
-/*! no static exports found */function(e,t){}});
+/*! no static exports found */function(e,t){document.addEventListener("DOMContentLoaded",()=>{})}});
 //# sourceMappingURL=bundle.js.map

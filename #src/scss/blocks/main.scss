@@ -15,8 +15,24 @@
 			margin-right: 40px;
 			transition: all .3s ease;
 
+			position: relative;
+
+			&:after {
+				content: '';
+				position: absolute;
+				left: 0;
+				bottom: -4px;
+				height: 3px;
+				width: 0;
+				background-color: $red;
+				transition: all .3s ease;
+			}
+
 			&:hover {
 				color: $red;
+				&:after {
+					width: 100%;
+				}
 			}
 
 
@@ -25,12 +41,36 @@
 		&_item.main-nav-active {
 			color: $red;
 			font-weight: 500;
+
+			&:after {
+				width: 100%;
+			}
 		}
 
 		&_download {
 			font-size: 16px;
 			line-height: 20px;
 			transition: all .3s ease;
+
+			position: relative;
+
+			&:after {
+				content: '';
+				position: absolute;
+				left: 0;
+				bottom: -4px;
+				height: 3px;
+				width: 0;
+				background-color: $red;
+				transition: all .3s ease;
+			}
+
+			&:hover {
+
+				&:after {
+					width: 100%;
+				}
+			}
 			&:hover {
 				color: $red;
 			}

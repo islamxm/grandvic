@@ -1,0 +1,89 @@
+.feed {
+	position: relative;
+	padding: 0 0 0 63px;
+	position: relative;
+
+	margin-bottom: 96px;
+
+	&__title {
+		position: absolute;
+		top: -23px;
+		left: 81px;
+		padding: 10px 16px;
+		background-color: #fff;
+
+		font-weight: 400;
+		font-size: 30px;
+		line-height: 30px;
+		font-family: 'Bebas Neue Book';
+	}
+
+	&__form	{
+		border: 0.5px solid #A6A6A6;
+		padding: 52px 24px 13px;
+
+
+		&_body {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-end;
+			gap: 12px;
+
+			margin-bottom: 14px;
+
+		}
+
+		label {
+			font-weight: 300;
+			font-size: 18px;
+			line-height: 22px;
+			margin-bottom: 5px;
+			display: block;
+		}
+
+		&_name {
+			width: 100%;
+			input {
+				border: 0.5px solid #A6A6A6;
+				border-radius: 2px;
+				padding: 12px 13px;
+				display: block;
+				width: 100%;
+				font-size: 18px;
+				line-height: 22px;
+				font-weight: 300;
+			}
+		}
+
+
+		&_tel {
+			width: 100%;
+			input {
+				border: 0.5px solid #A6A6A6;
+				border-radius: 2px;
+				padding: 12px 13px;
+				display: block;
+				width: 100%;
+				font-size: 18px;
+				line-height: 22px;
+				font-weight: 300;
+			}
+		}
+
+		&_btn {
+			padding: 14px 38px;
+			background-color: $red;
+			color: #fff;
+
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 20px;
+		}	
+
+		&_agree {
+			font-weight: 300;
+			font-size: 12px;
+			line-height: 15px;
+		}
+	}
+}

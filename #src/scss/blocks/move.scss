@@ -1,0 +1,26 @@
+.move {
+	padding-left: 63px;
+	position: relative;
+	margin-bottom: 96px;
+
+	&:after {
+		position: absolute;
+		content: '';
+		width: 23px;
+		height: 112px;
+		background-color: $red;
+		top: 0;
+		left: 0;
+	}
+	&__title {
+		margin-bottom: 36px;
+	}
+
+	&__tabs {
+		display: flex;
+	}
+
+	&__tab {
+
+	}
+}
