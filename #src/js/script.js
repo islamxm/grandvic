@@ -1,6 +1,10 @@
 import Swiper from './libs/swiper.js';
+import MicroModal from 'micromodal';
 
 document.addEventListener('DOMContentLoaded', () => {
+
+	/*MODAL ================================================================*/
+	MicroModal.init();
 
 	/*GLOBAL VARS ======================================================================================================================*/
 

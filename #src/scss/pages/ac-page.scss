@@ -1,0 +1,39 @@
+.ac {
+	max-width: 1028px;
+	min-width: 100%;
+	padding: 42px 0;
+	padding-left: 64px;
+
+
+	&__title {
+		margin-bottom: 48px;
+	}
+
+	&__list {
+		display: flex;
+		gap: 40px;
+		flex-wrap: wrap;
+
+	}
+
+	&__item {
+		max-width: 316px;
+		display: block;
+
+		&_img {
+			margin-bottom: 17px;
+		}	
+
+		&_link {
+			display: block;
+			transition: all .3s ease;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 17px;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
