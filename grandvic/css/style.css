@@ -1052,6 +1052,7 @@ body {
   line-height: 20px;
   margin: 0 20px;
   padding-bottom: 16px;
+  cursor: pointer;
   position: relative;
 }
 .plan__tab:after {
@@ -1299,6 +1300,36 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.move__tab {
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 10px;
+  margin-right: 20px;
+  margin-bottom: 24px;
+  cursor: pointer;
+  position: relative;
+}
+.move__tab:after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #E31E24;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  bottom: 0;
+  left: 0;
+}
+.move__tab.move-active {
+  font-weight: 700;
+}
+.move__tab.move-active:after {
+  opacity: 1;
 }
 .footer {
   font-family: "Roboto", sans-serif;
