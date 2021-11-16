@@ -1,0 +1,26 @@
+//LIBS
+
+
+//OVERALL
+@import './components/fonts.scss';
+@import './components/vars.scss';
+@import './components/global.scss';
+@import './components/animations.scss';
+
+
+//BLOCKS
+@import './blocks/aside.scss';
+@import './blocks/main.scss';
+
+
+/*Content blocks*/
+@import './blocks/prev.scss';
+@import './blocks/about.scss';
+@import './blocks/ben.scss';
+@import './blocks/infra.scss';
+@import './blocks/cond.scss';
+
+
+//MEDIA
+@import './components/media.scss';
+

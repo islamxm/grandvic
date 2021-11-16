@@ -1,0 +1,88 @@
+.prev {
+	margin-bottom: 90px;
+	img {
+
+	}
+	&__inner {
+
+		position: relative;
+
+		.prev-left {
+			position: absolute;
+			top: 87px;
+			left: 10px;
+			opacity: 0;
+			transition: all .3s ease;
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+
+		.prev-right {
+			position: absolute;
+			top: 70px;
+			right: 10px;
+			opacity: 0;
+			transition: all .3s ease;
+
+			&:hover {
+				opacity: 1;
+			}
+
+
+		}
+
+		.prev-top {
+			position: absolute;
+			top: 5px;
+			left: 378px;
+			opacity: 0;
+			transition: all .3s ease;
+
+			&:hover {
+				opacity: 1;
+			}
+
+
+		}
+
+		.prev-bottom {
+			position: absolute;
+			bottom: 14px;
+			right: 154px;
+			opacity: 0;
+			transition: all .3s ease;
+
+			&:hover {
+				opacity: 1;
+			}
+
+		}
+	}
+
+	&__btn {
+		padding: 18px 82px 18px 20px;
+		background-color: $red;
+		display: inline-block;
+		position: absolute;
+		bottom: 5px;
+		left: 111px;
+		color: #fff;
+
+		&:after {
+			position: absolute;
+			content: url('../img/right.svg');
+			right: 40px;
+			top: calc(50% - 7px);
+			transition: all .3s ease;
+		}
+
+		&:hover {
+
+			&:after {
+				transform: translateX(20px);
+			}
+		}
+	}
+}

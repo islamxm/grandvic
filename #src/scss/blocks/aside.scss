@@ -1,0 +1,131 @@
+//ASIDE ==================================================================
+.aside {
+    width: 260px;
+    max-height: 790px;
+    box-shadow: 2px 0px 6px rgba(91, 91, 91, 0.1);
+
+
+    &__inner {
+
+    }
+
+    &__logo {
+        margin-bottom: 35px;
+        display: block;
+        display: flex;
+        justify-content: center;
+        padding: 21px 40px;
+
+        img {
+            max-height: 117px;
+            max-width: 172px;
+        }
+    }
+
+    &__nav {
+        padding-left: 10px;
+        &_list {
+
+        }
+
+        &_item {
+            margin-bottom: 12px;
+            display: block;
+            padding-left: 20px;
+            transition: all .2s ease;
+
+            &:hover {
+                color: $red;
+            }
+        }
+
+        &_item.nav-active {
+            color: $red;
+            font-weight: 500;
+            position: relative;
+
+            &:after {
+                position: absolute;
+                content: url('../img/nav-active.png');
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+
+
+    &__contacts {
+        padding-left: 30px;
+        margin-bottom: 20px;
+        &_title {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            margin-bottom: 13px;
+        }
+
+        &_list {
+
+        }
+
+        &_item {
+            display: block;
+            position: relative;
+            padding-left: 31px;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        &_item.adress {
+            margin-bottom: 20px;
+
+            &:after {
+                position: absolute;
+                content: url('../img/geo.svg');
+                top: -3px;
+                left: 0;
+            }
+        }
+
+        &_item.tel {
+
+            &:after {
+                position: absolute;
+                content: url('../img/tel.svg');
+                top: -3px;
+                left: 0;
+            }
+
+        }
+    }
+
+    &__feed {
+        padding-left: 35px;
+        font-size: 14px;
+        line-height: 17px;
+        text-decoration: underline;
+        color: $red;
+        margin-bottom: 20px;
+    }
+
+    &__inst {
+        padding-left: 30px;
+        
+        svg {
+            transition: all .3s ease;
+            path {
+                transition: all .3s ease;
+            }
+        }
+
+        &:hover {
+
+            svg {
+                path {
+                    fill: $red;
+                }
+            }
+        }
+    }
+}

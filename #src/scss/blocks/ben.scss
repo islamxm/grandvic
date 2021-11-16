@@ -1,0 +1,171 @@
+.ben {
+	padding: 0 0 0 63px;
+	position: relative;
+
+	margin-bottom: 67px;
+
+	&:after {
+		position: absolute;
+		content: '';
+		width: 23px;
+		height: 112px;
+		background-color: $d-gray;
+		left: 0;
+		top: 0;
+	}
+
+
+	&__title {
+		margin-bottom: 36px;
+	}
+
+	&__prev {	
+		margin-bottom: 65px;
+
+		&_img {
+
+		}
+
+		&_descr {
+			padding: 0 30px;
+			position: relative;
+
+			&:after {
+				position: absolute;
+				content: '';
+				height: 73px;
+				width: 1px;
+				background-color: $red;
+				top: -65px;
+				left: 20px;
+				z-index: -1;
+			}
+
+			&:before {
+				position: absolute;
+				content: url('../img/nav-active.png');
+				top: -1px;
+				left: 16px;
+			}
+		}
+
+		&_title {
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 24px;
+			margin-bottom: 24px; 
+		}
+
+		&_text {
+			font-size: 16px;
+			line-height: 20px;
+		}
+	}
+
+
+	&__body {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.ben__col_left {
+
+		.ben__col_item {
+			max-width: 444px;
+			
+
+			.ben__col_item_img {
+
+			}
+
+			.ben__col_item_descr {
+				padding-left: 42px;
+
+			}
+
+			.ben__col_item_title {
+				margin-bottom: 24px;
+				padding-top: 24px;
+				position: relative;
+
+				&:after {
+					position: absolute;
+					height: 100%;
+					width: 1px;
+					background-color: $red;
+					left: -10px;
+					top: -15px;
+					content: '';
+					z-index: -1;
+				}
+
+				&:before {
+					position: absolute;
+					content: url('../img/nav-active.png');
+					bottom: 3px;
+					left: -14px;
+				}
+			}
+		}
+	}
+
+	.ben__col_right {
+		.ben__col_item {
+			max-width: 475px;
+			.ben__col_item_img {
+
+			}
+			.ben__col_item_descr {
+				padding-left: 30px;
+				padding-bottom: 24px;
+				position: relative;
+
+				&:after {
+					position: absolute;
+					content: '';
+					left: 20px;
+					top: 10px;
+					width: 1px;
+					height: 100%;
+					background-color: $red;
+					z-index: -1;
+				}
+
+				&:before {
+					position: absolute;
+					content: url('../img/nav-active.png');
+					left: 15px;
+					top: 0;
+
+
+				}
+			}
+			.ben__col_item_title {
+				margin-bottom: 24px;
+			}
+		}
+	}
+
+
+	&__col {
+		width: 45%;
+
+		&_item {
+			margin-bottom: 80px;
+			&_img {
+
+			}
+
+			&_descr {
+
+			}
+
+			&_title {
+				font-weight: 500;
+				font-size: 20px;
+				line-height: 24px;
+			}
+		}
+
+	}
+}

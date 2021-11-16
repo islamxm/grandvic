@@ -1,0 +1,99 @@
+.cond {
+	padding: 0 0 0 63px;
+	position: relative;
+	margin-bottom: 96px;
+
+	&:after {
+		position: absolute;
+		left: 0;
+		top: 0;
+		content: '';
+		width: 23px;
+		height: 112px;
+		background-color: $d-gray;
+	}
+
+	&__title {
+		margin-bottom: 36px;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+
+	}
+
+	&__item {
+		width: 320px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: flex-start;
+		
+		padding: 30px 0;
+		padding-left: 92px;
+		padding-right: 15px;
+		border: 1px solid #000;
+		color: #000;
+		background-color: #fff;
+		
+		position: relative;
+
+
+		&_num {
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 24px;
+			margin-bottom: 10px;
+			color: $red;
+		}
+
+		&_name {
+			font-size: 18px;	
+			line-height: 22px;
+		}
+
+		&:nth-child(1) {
+
+			&:after {
+				position: absolute;
+				content: url('../img/cond1.svg');
+				left: 20px;
+				top: calc(50% - 28px);
+			}
+		}
+
+		&:nth-child(2) {
+
+			&:after {
+				position: absolute;
+				content: url('../img/cond2.svg');
+				left: 20px;
+				top: calc(50% - 28px);
+			}
+		}
+
+		&:nth-child(3) {
+
+			&:after {
+				position: absolute;
+				content: url('../img/cond3.svg');
+				left: 20px;
+				top: calc(50% - 28px);
+			}
+		}
+
+	}
+
+	&__item.cond-active {
+		background-color: $red;
+		border-color: $red;
+		color: #fff;
+
+		.cond__item_num {
+			color: #fff;
+		}
+	}
+
+
+}
