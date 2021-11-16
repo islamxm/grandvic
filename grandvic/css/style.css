@@ -428,6 +428,7 @@ body {
 .main {
   max-width: 1182px;
   width: 100%;
+  margin: 0 auto;
 }
 .main__top {
   display: -webkit-box;
@@ -1615,4 +1616,35 @@ body {
   font-weight: 300;
   font-size: 16px;
   line-height: 20px;
+}
+
+.newsp {
+  padding-left: 63px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+.newsp__title {
+  margin-bottom: 36px;
+}
+
+.newsi {
+  max-width: 1183px;
+  min-width: 100%;
+  padding: 0 0 45px 0;
+}
+.newsi__body {
+  padding: 41px 65px 0 65px;
+}
+.newsi__title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  margin-bottom: 8px;
+}
+.newsi__date {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9B9B9B;
+  margin-bottom: 48px;
 }

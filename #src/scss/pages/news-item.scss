@@ -1,0 +1,28 @@
+.newsi {
+	max-width: 1183px;
+	min-width: 100%;
+	padding: 0 0 45px 0;
+
+	&__img {
+
+	}
+
+	&__body {
+		padding: 41px 65px 0 65px;
+	}
+
+	&__title {
+		font-weight: 500;
+		font-size: 32px;
+		line-height: 39px;
+		margin-bottom: 8px;
+	}
+
+	&__date {
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 17px;
+		color: #9B9B9B;
+		margin-bottom: 48px;
+	}
+}
