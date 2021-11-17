@@ -19,21 +19,25 @@ document.addEventListener('DOMContentLoaded', () => {
 	/*FUNCTIONS FOR TABS ===============================================================================================================*/
 
 	function hideTabContent(tabsContent, tabs, activeClass) {
-		tabsContent.forEach( i => {
-			i.classList.add('hide');
-			i.classList.remove('show', 'fade');
-		});
+		if(tabs) {
+			tabsContent.forEach( i => {
+				i.classList.add('hide');
+				i.classList.remove('show', 'fade');
+			});
 
-		tabs.forEach(i => {
-			i.classList.remove(activeClass);
-		});
+			tabs.forEach(i => {
+				i.classList.remove(activeClass);
+			});
+		};
 	}
 
 
 	function showTabContent(i = 0, tabsContent, tabs, activeClass) {
-		tabsContent[i].classList.add('show', 'fade');
-		tabsContent[i].classList.remove('hide');
-		tabs[i].classList.add(activeClass);
+		if(tabs) {
+			tabsContent[i].classList.add('show', 'fade');
+			tabsContent[i].classList.remove('hide');
+			tabs[i].classList.add(activeClass);
+		};
 	}
 
 
@@ -55,8 +59,8 @@ document.addEventListener('DOMContentLoaded', () => {
 						hideTabContent(infraTabsContent, infraTabs, 'tab-active');
 						showTabContent(i, infraTabsContent, infraTabs, 'tab-active');
 					}
-				})
-			}
+				});
+			};
 		});
 	}
 	
@@ -215,19 +219,21 @@ document.addEventListener('DOMContentLoaded', () => {
     /*Navigation Aside*/
     const asideNavItems = document.querySelectorAll('.aside__nav_item');
 
-    asideNavItems.forEach(i => {
-    	i.addEventListener('click', (e) => {
-    		let tar = e.target;
+    if(asideNavItems) {
+    	asideNavItems.forEach(i => {
+	    	i.addEventListener('click', (e) => {
+	    		let tar = e.target;
 
-    		
-    		asideNavItems.forEach(item => {
-    			item.classList.remove('nav-active');
-    		});
-    		if(tar && tar.classList.contains('aside__nav_item')) {
-    			tar.classList.add('nav-active');
-    		}
-    	});
-    });
+	    		
+	    		asideNavItems.forEach(item => {
+	    			item.classList.remove('nav-active');
+	    		});
+	    		if(tar && tar.classList.contains('aside__nav_item')) {
+	    			tar.classList.add('nav-active');
+	    		}
+	    	});
+	    });
+    }
 })
 
 
