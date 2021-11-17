@@ -23,7 +23,7 @@
 	&__tabs {
 		display: flex;
 
-		margin-bottom: 40px;
+		// margin-bottom: 40px;
 
 	}
 
@@ -59,9 +59,10 @@
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
+		padding-top: 20px;
 
 		&_descr {
-			padding: 40px 0 43px 0;	
+			padding: 20px 0 43px 0;	
 		}	
 
 		&_img {

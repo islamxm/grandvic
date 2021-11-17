@@ -162,43 +162,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	/*Infrastructure Tabs*/
-
 
 	/*Yandex Map*/
 	ymaps.ready(function () {
@@ -215,8 +178,19 @@ document.addEventListener('DOMContentLoaded', () => {
             ),
 
             myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-                hintContent: 'Собственный значок метки',
-                balloonContent: 'Это красивая метка'
+                // hintContent: 'Собственный значок метки',
+                // balloonContent: 'Это красивая метка'
+                balloonContentHeader: `
+                	<div class="map__balloon">
+                	<h3 class="map__title">Отдел продаж:</h3>
+                `,
+                balloonContentBody: `
+                	<div class="map__content_body">
+                		<div class="map__content_body_adr">г. Нур-Султан, пересечение ул. С. Нурмағамбетова и Ж.Нажімеденова</div>
+                		<a class="map__content_body_tel" href="+77172677373">+7 7172 67-73-73</a>
+                	</div>
+                	</div>
+                `
             }, {
                 // Опции.
                 // Необходимо указать данный тип макета.
@@ -230,9 +204,29 @@ document.addEventListener('DOMContentLoaded', () => {
                 iconImageOffset: [-100, -38]
             })
 
-        myMap.geoObjects
-            .add(myPlacemark)
+        myMap.geoObjects.add(myPlacemark);
+        myPlacemark.balloon.open();
             
+    });
+
+
+
+
+    /*Navigation Aside*/
+    const asideNavItems = document.querySelectorAll('.aside__nav_item');
+
+    asideNavItems.forEach(i => {
+    	i.addEventListener('click', (e) => {
+    		let tar = e.target;
+
+    		
+    		asideNavItems.forEach(item => {
+    			item.classList.remove('nav-active');
+    		});
+    		if(tar && tar.classList.contains('aside__nav_item')) {
+    			tar.classList.add('nav-active');
+    		}
+    	});
     });
 })
 

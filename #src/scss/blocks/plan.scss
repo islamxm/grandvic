@@ -85,7 +85,7 @@
 					}
 
 					&_list {
-
+						margin-bottom: 57px;
 
 					}
 
@@ -103,6 +103,23 @@
 							font-weight: 500;
 							font-size: 16px;
 							line-height: 20px;
+						}
+					}
+
+					&_btn {
+						padding: 10px 0;
+						width: 100%;
+						font-weight: 600;
+						font-size: 16px;
+						line-height: 20px;
+						background-color: $red;
+						color: #fff;
+
+						transition: all .2s ease;
+
+						&:active {
+							background-color: #E24A4F;
+							transform: scale(0.98);
 						}
 					}
 				}

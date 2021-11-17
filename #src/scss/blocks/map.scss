@@ -1,6 +1,7 @@
 .map {
 	width: 100%;
 	height: 100%;
+
 	&__body {
 		width: 100%;
 		height: 100%;
@@ -11,8 +12,65 @@
 
 	#map {
 		height: 100%;
-		width: 100%;
 		padding: 0;
 		margin: 0;
+
+		.ymaps-2-1-79-balloon__layout {
+			width: 344px;
+			height: 170px !important;
+		}
+		.map__balloon {
+			padding: 10px 8px;
+			max-width: 297px;
+			
+			.map__title {
+				font-weight: 600;
+				font-size: 14px;
+				line-height: 17px;
+				margin-bottom: 20px;
+			}
+
+			#id_163713785597187338815 {
+				height: auto !important;
+			}
+
+
+			.map__content_body {
+				height: 93px;
+				&_adr {
+					font-weight: 300;
+					font-size: 14px;
+					line-height: 17px;
+					padding-left: 31px;
+
+					position: relative;
+					margin-bottom: 20px;
+
+					&:after {
+						position: absolute;
+						content: url('../img/geo.svg');
+						top: 0;
+						left: 0;
+					}
+				}
+
+				&_tel {
+					font-weight: 300;
+					font-size: 14px;
+					line-height: 17px;
+					padding-left: 31px;
+
+					position: relative;
+
+					&:after {
+						position: absolute;
+						content: url('../img/tel.svg');
+						top: 0;
+						left: 0;
+					}
+				}
+			}
+		}
+
 	}
 }
