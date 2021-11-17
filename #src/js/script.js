@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const gallerySlider = new Swiper('.gallery__body', {
 		slidesPerView: 1,
 		spaceBetween: 10,
-		width: 703,
+		
 		pagination: {
 			el: '.swiper-pagination',
 			type: 'progressbar',
@@ -126,8 +126,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	/*MOVEMENT SECTION SLIDER*/
 	const moveSlider = new Swiper('.move__body_item', {
-		slidesPerView: 3,
-		spaceBetween: 32,
 		pagination: {
 			el: '.swiper-pagination',
 			type: 'progressbar',
@@ -135,6 +133,14 @@ document.addEventListener('DOMContentLoaded', () => {
 		navigation: {
 			prevEl: '.move-prev',
 			nextEl: '.move-next'
+		},
+		slidesPerView: 1,
+		berakpoints: {
+			1200: {
+				slidesPerView: 3,
+				spaceBetween: 32,
+				
+			}
 		}
 	});
 
@@ -234,6 +240,83 @@ document.addEventListener('DOMContentLoaded', () => {
 	    	});
 	    });
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*MOBILE ========================================*/
+
+    /*Mobile prev image*/
+    const prevImg = document.querySelector('.prev__img');
+
+    if(prevImg) {
+    	window.addEventListener('resize', () => {
+	    	if(window.innerWidth < 1200) {
+	    		prevImg.setAttribute('src', './img/mob-prev-bg.png');
+	    	} 
+	    	if(window.innerWidth > 1200) {
+	    		prevImg.setAttribute('src', './img/prev@1x.png');
+	    	}
+	    });
+
+	    if(window.innerWidth < 1200) {
+	    	prevImg.setAttribute('src', './img/mob-prev-bg.png');
+	    } 
+	    if(window.innerWidth > 1200) {
+    		prevImg.setAttribute('src', './img/prev@1x.png');
+    	}
+    }
+
+
+    /*Mobile slider Infrastructure*/
+    let mobInfraSlider;
+
+    function mobInfraSliderToggler() {
+    	if(window.innerWidth < 1200) {
+	    	mobInfraSlider = new Swiper('.infra__content_slider', {
+	    		slidesPerView: 1,
+	    		spaceBetween: 10,
+	    		navigation: {
+	    			prevEl: '.infra-prev',
+	    			nextEl: '.infra-next',
+
+	    		}
+	    	});
+	    }
+	    if(window.innerWidth >= 1200 && mobInfraSlider) {
+	    	mobInfraSlider.destroy();
+	    }
+    }
+
+    mobInfraSliderToggler();
+
+    window.addEventListener('resize', () => {
+    	mobInfraSliderToggler();
+    })
+
+
+
+    /*Burger*/
+
+    const burgerMenu = document.querySelector('.burger');
+    const burgerBtn = document.querySelector('.mob__header_burger');
+
+	burgerBtn.addEventListener('click', () => {
+
+		burgerMenu.classList.toggle('burger-open');
+	})    
+    
 })
 
 

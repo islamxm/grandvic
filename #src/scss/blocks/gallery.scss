@@ -8,7 +8,7 @@
 
 	&__body {
 		padding-bottom: 45px;
-
+		width: 703px;
 		&_wrapper {
 
 		}
@@ -47,5 +47,35 @@
 		left: 10%;
 		bottom: 0;
 		position: absolute;
+	}
+}
+
+@media (max-width: 1200px) {
+	.gallery {
+		margin-bottom: 80px;
+
+		.swiper-pagination {
+			display: none;
+		}
+
+		&-prev {
+			right: 56px;
+			left: auto;
+		}
+
+		&-next {
+			right: 0;
+			left: auto;
+		}
+
+		&__body {
+			width: 100% !important;
+
+			&_item {
+				img {
+					width: 100%;
+				}
+			}
+		}
 	}
 }

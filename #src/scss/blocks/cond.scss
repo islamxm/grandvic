@@ -133,6 +133,30 @@
 			color: #fff;
 		}
 	}
+}
 
 
+@media (max-width: 1200px) {
+	.cond {
+		padding: 0;
+		margin-bottom: 60px;
+
+		&:after {
+			display: none;
+		}
+
+		&__title {
+
+		}
+
+		&__list {
+			flex-wrap: wrap;
+		}
+
+		&__item {
+			width: 100%;
+			justify-content: space-evenly;
+			padding-left: 0;margin-bottom: 20px;
+		}
+	}
 }

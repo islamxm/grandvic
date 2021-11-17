@@ -78,3 +78,29 @@
 		}
 	}
 }
+
+@media (max-width: 1200px) {
+	.news {
+		padding: 0;
+		margin-bottom: 80px;
+
+		&:after {
+			display: none;
+		}
+
+		&__body {
+
+
+		}
+		&__item {
+			width: 100%;
+			max-width: 100%;
+
+			&_img {
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+}

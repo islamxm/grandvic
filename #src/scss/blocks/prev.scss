@@ -86,3 +86,49 @@
 		}
 	}
 }
+
+@media (max-width: 1200px) {
+	.prev {
+		margin-bottom: 120px;
+		&__img {
+			width: 100%;
+			max-height: 377px;
+			object-fit: cover;
+		}
+
+		.prev-left {
+			display: none;
+		}
+
+		.prev-top {
+			display: none;
+		}
+
+		.prev-right {
+			display: none;
+		}
+
+		.prev-bottom {
+			display: none;
+		}
+
+		&__btn {
+			height: 155px;
+			width: 166px;
+			bottom: -70px;
+			left: 16px;
+			padding-bottom: 60px;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-top: 15px;
+
+
+			&:after {
+				bottom: 41px;
+				left: 23px;
+				right: auto;
+				top: auto;
+			}
+		}
+	}
+}

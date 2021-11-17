@@ -7,6 +7,10 @@
 		display: flex;
 		justify-content: space-between;
 		padding: 10px 100px;
+
+		.mob__header {
+			display: none;
+		}
 		&_list {
 			display: flex;
 		}
@@ -74,6 +78,60 @@
 			}
 			&:hover {
 				color: $red;
+			}
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.main {
+		max-width: 100%;
+		&__top {
+			padding: 12px 16px;
+			.mob__header {
+				display: flex;
+				justify-content: space-between;
+				border-bottom: 1px solid #E5E5E5;
+				align-items: center;
+				width: 100%;
+				position: fixed;
+				top: 0;
+				left: 0;width: 100%;
+				z-index: 100000000;
+				background-color: #fff;
+				padding: 12px 16px;
+
+				&_burger {
+					div {
+						width: 32px;
+						height: 3px;
+						background-color: #5B5B5B;
+						margin-bottom: 8px;
+					}
+				}
+
+				&_logo {
+					width: 129px;
+					height: 37px;
+
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: contain !important;
+					}
+				}
+
+				&_tel {
+
+				}
+			}
+
+			&_list {
+				display: none;
+			}
+
+			&_download {
+				display: none;
 			}
 		}
 	}

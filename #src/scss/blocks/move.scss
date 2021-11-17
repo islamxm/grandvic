@@ -92,3 +92,41 @@
 		cursor: pointer;
 	}
 }
+
+@media (max-width: 1200px) {
+
+	.move {
+		padding: 0;
+		margin-bottom: 80px;
+
+		&:after {
+			display: none;
+		}
+		&__title {
+
+		}
+
+		.swiper-pagination {
+			display: none;
+		}
+
+		&-next {
+			left: auto;
+			right: 0;
+
+		}
+
+		&-prev {
+			left: auto;
+			right: 56px;
+		}
+
+		&__body {
+			&_item {
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+}

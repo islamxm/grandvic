@@ -61,3 +61,36 @@
 	}
 
 }
+
+@media (max-width: 1200px) {
+	.video {
+		padding: 0;
+		margin-bottom: 60px;
+
+		&__title {
+
+		}
+
+		&__btns {
+
+			flex-wrap: wrap;
+		}
+
+		&__btn {
+			width: 100%;
+			text-align: center;
+			margin: 0;
+			margin-bottom: 20px;
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		&__content {
+
+			img {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+	}
+}

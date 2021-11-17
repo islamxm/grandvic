@@ -71,3 +71,41 @@
 		}
 	}
 }
+
+@media (max-width: 1200px) {
+	.about {
+		padding: 0;
+		margin-bottom: 15px;
+		&:after {
+			display: none;
+		}
+		&__title {
+			display: none;
+		}
+
+		&__text {
+			display: none;
+		}
+		&__list {
+			flex-wrap: wrap;
+			padding-left: 32px;
+		}
+		&__item {
+			width: 50%;
+			max-width: unset !important;
+			margin-bottom: 37px;
+			align-items: flex-start;
+			&:after {
+				display: none;
+			}
+
+			&_num {
+				color: #000;
+			}
+
+			&_name {
+				color: #A6A6A6;
+			}
+		}
+	}
+}

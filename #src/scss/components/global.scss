@@ -62,13 +62,35 @@ body {
     height: 100%;
 }
 
+@media (max-width: 1200px) {
+    .wrapper {
+        // width: 100%;
+    }
+}
+
 .content {
     max-width: 1093px;
     width: 100%;
 }
 
+@media (max-width: 1200px) {
+    .content {
+        padding: 0 16px;
+    }
+
+    .sec-title {
+        font-size: 30px;
+        line-height: 33px;
+    }
+
+    .mob-bot {
+        position: relative;
+        padding-bottom: 435px;
+    }
+}
+
 .show {
-    display: flex;
+    display: block;
 }
 
 .hide {
