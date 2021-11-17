@@ -60,9 +60,11 @@
 		justify-content: space-between;
 		flex-wrap: wrap;
 		padding-top: 20px;
+		align-items: stretch;
 
 		&_descr {
 			padding: 20px 0 43px 0;	
+			min-height: 100%;
 		}	
 
 		&_img {
@@ -73,6 +75,7 @@
 			max-width: 267px;
 			margin-bottom: 40px;
 
+
 			&_img {
 				display: flex;
 			}
@@ -81,12 +84,17 @@
 				background-color: $red;
 				padding: 10px 20px;
 				color: #fff;
-
+				font-weight: 500;
 				font-size: 14px;
 				line-height: 17px;
 				min-height: 54px;
 				position: relative;
 
+
+				p {
+					font-weight: 300;
+					padding-top: 15px;
+				}
 				&:after {
 					position: absolute;
 					content: '';

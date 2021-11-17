@@ -184,17 +184,17 @@ document.addEventListener('DOMContentLoaded', () => {
             myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
                 // hintContent: 'Собственный значок метки',
                 // balloonContent: 'Это красивая метка'
-                balloonContentHeader: `
-                	<div class="map__balloon">
-                	<h3 class="map__title">Отдел продаж:</h3>
-                `,
-                balloonContentBody: `
-                	<div class="map__content_body">
-                		<div class="map__content_body_adr">г. Нур-Султан, пересечение ул. С. Нурмағамбетова и Ж.Нажімеденова</div>
-                		<a class="map__content_body_tel" href="+77172677373">+7 7172 67-73-73</a>
-                	</div>
-                	</div>
-                `
+                // balloonContentHeader: `
+                // 	<div class="map__balloon">
+                // 	<h3 class="map__title">Отдел продаж:</h3>
+                // `,
+                // balloonContentBody: `
+                // 	<div class="map__content_body">
+                // 		<div class="map__content_body_adr">г. Нур-Султан, пересечение ул. С. Нурмағамбетова и Ж.Нажімеденова</div>
+                // 		<a class="map__content_body_tel" href="+77172677373">+7 7172 67-73-73</a>
+                // 	</div>
+                // 	</div>
+                // `
             }, {
                 // Опции.
                 // Необходимо указать данный тип макета.
@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', () => {
             })
 
         myMap.geoObjects.add(myPlacemark);
-        myPlacemark.balloon.open();
+        // myPlacemark.balloon.open();
             
     });
 
