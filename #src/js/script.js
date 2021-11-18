@@ -293,8 +293,7 @@ document.addEventListener('DOMContentLoaded', () => {
     		}
     	});
     }
-    if(window.innerWidth >= 1200 && mobInfraSlider) {
-    	mobInfraSlider.destroy();
+    if(window.innerWidth >= 1200) {
     	document.querySelector('.infra__content_slider_wr').removeAttribute('style');
     	document.querySelectorAll('.infra__content_item').forEach(i => {
     		i.removeAttribute('style');	
@@ -315,8 +314,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	    		}
 	    	});
 	    }
-	    if(window.innerWidth >= 1200 && mobInfraSlider) {
-	    	mobInfraSlider.destroy();
+	    if(window.innerWidth >= 1200) {
 	    	document.querySelector('.infra__content_slider_wr').removeAttribute('style');
 	    	document.querySelectorAll('.infra__content_item').forEach(i => {
 	    		i.removeAttribute('style');	
@@ -350,7 +348,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	    }
 
-	    if(window.innerWidth >= 1200 && tabSliderSw) {
+	    if(window.innerWidth >= 1200) {
 
 	    	document.querySelectorAll('.tabs-slider-wrapper').forEach(i => {
 	    		i.removeAttribute('style');
@@ -371,7 +369,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	    }
 
-	    if(window.innerWidth >= 1200 && tabSliderSw) {
+	    if(window.innerWidth >= 1200) {
 
 	    	document.querySelectorAll('.tabs-slider-wrapper').forEach(i => {
 	    		i.removeAttribute('style');
@@ -405,8 +403,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	    	});
 	    }
 
-	    if (window.innerWidth >= 1200 && benSldier) {
-	    	benSldier.destroy(true, true);
+	    if (window.innerWidth >= 1200) {
 	    	document.querySelector('.ben__content_wr').removeAttribute('style');
 	    	document.querySelector('.ben__content_wr').style.height = 'auto';
 	    	document.querySelectorAll('.ben__item').forEach(i => {
@@ -427,8 +424,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	    	});
 	    }
 
-	    if (window.innerWidth >= 1200 && benSldier) {
-	    	benSldier.destroy(true, true);
+	    if (window.innerWidth >=	 1200) {
 	    	document.querySelector('.ben__content_wr').removeAttribute('style');
 	    	document.querySelector('.ben__content_wr').style.height = 'auto';
 	    	document.querySelectorAll('.ben__item').forEach(i => {

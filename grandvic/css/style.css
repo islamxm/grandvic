@@ -823,6 +823,15 @@ body {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
+  overflow-x: hidden;
+}
+
+.main {
+  overflow-x: hidden;
+}
+
+.content {
+  overflow-x: hidden;
 }
 
 .content {

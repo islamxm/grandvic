@@ -61,6 +61,15 @@ body {
 .wrapper {
     display: flex;
     height: 100%;
+    overflow-x: hidden;
+}
+
+.main {
+    overflow-x: hidden;
+}
+
+.content {
+    overflow-x: hidden;
 }
 
 @media (max-width: 1200px) {
