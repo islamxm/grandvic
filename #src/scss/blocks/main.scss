@@ -3,10 +3,17 @@
 	width: 100%;
 	margin: 0 auto;
 
+	
+
+
+
+
 	&__top {
 		display: flex;
 		justify-content: space-between;
 		padding: 10px 100px;
+		
+		width: 100%;
 
 		.mob__header {
 			display: none;
