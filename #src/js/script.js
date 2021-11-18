@@ -5,6 +5,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	/*MODAL ================================================================*/
 	MicroModal.init();
+	/*SECTIONS*/
+	const main = document.querySelector('#main');
+	const about = document.querySelector('#about');
+	const ben = document.querySelector('#ben');
+	const infra = document.querySelector('#infra');
+	const cond = document.querySelector('#cond');
+	const video = document.querySelector('#video');
+	const plan = document.querySelector('#plan');
+	const gallery = document.querySelector('#gallery');
+	const move = document.querySelector('#move');
+	const news = document.querySelector('#news');
+	const feed = document.querySelector('#feed');
 
 	/*GLOBAL VARS ======================================================================================================================*/
 
@@ -44,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	/*INFRASTRUCTURE TABS ===============================================================================================================*/
 
-	if(infraTabs) {
+	if(infra) {
 		hideTabContent(infraTabsContent, infraTabs, 'tab-active');
 		showTabContent(0, infraTabsContent, infraTabs, 'tab-active');
 
@@ -70,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	/*PLANNING SLIDER TABS ==============================================================================================================*/
 
-	if(planTabs) {
+	if(plan) {
 		hideTabContent(planTabsContent, planTabs, 'plan-active');
 		showTabContent(0, planTabsContent, planTabs, 'plan-active');
 
@@ -152,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const moveTabsParent = document.querySelector('.move__tabs');
 	const moveTabsContent = document.querySelectorAll('.move__body_item');
 
-	if(moveTabs) {
+	if(move) {
 		hideTabContent(moveTabsContent, moveTabs, 'move-active');
 		showTabContent(0, moveTabsContent, moveTabs, 'move-active');
 
@@ -174,7 +186,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 	/*Yandex Map*/
-	ymaps.ready(function () {
+	const mapTar = document.querySelector('#map');
+	if(mapTar) {
+		ymaps.ready(function () {
         let myMap = new ymaps.Map('map', {
                 center: [51.118834, 71.483385],
                 zoom: 17
@@ -218,6 +232,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // myPlacemark.balloon.open();
             
     });
+	}
+	
 
 
 
@@ -280,29 +296,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     /*Mobile slider Infrastructure*/
+
+    const mainPage = document.querySelector('.main-page');
+
     let mobInfraSlider;
 
-	if(window.innerWidth < 1200) {
-    	mobInfraSlider = new Swiper('.infra__content_slider', {
-    		slidesPerView: 1,
-    		spaceBetween: 10,
-    		navigation: {
-    			prevEl: '.infra-prev',
-    			nextEl: '.infra-next',
 
-    		}
-    	});
-    }
-    if(window.innerWidth >= 1200) {
-    	document.querySelector('.infra__content_slider_wr').removeAttribute('style');
-    	document.querySelectorAll('.infra__content_item').forEach(i => {
-    		i.removeAttribute('style');	
-    	});
-
-    }
-
-
-    window.addEventListener('resize', () => {
+    if(infra) {
     	if(window.innerWidth < 1200) {
 	    	mobInfraSlider = new Swiper('.infra__content_slider', {
 	    		slidesPerView: 1,
@@ -315,12 +315,37 @@ document.addEventListener('DOMContentLoaded', () => {
 	    	});
 	    }
 	    if(window.innerWidth >= 1200) {
+	    	mobInfraSlider = undefined;
 	    	document.querySelector('.infra__content_slider_wr').removeAttribute('style');
 	    	document.querySelectorAll('.infra__content_item').forEach(i => {
 	    		i.removeAttribute('style');	
 	    	});
+
 	    }
-    })
+
+
+	    window.addEventListener('resize', () => {
+	    	if(window.innerWidth < 1200) {
+		    	mobInfraSlider = new Swiper('.infra__content_slider', {
+		    		slidesPerView: 1,
+		    		spaceBetween: 10,
+		    		navigation: {
+		    			prevEl: '.infra-prev',
+		    			nextEl: '.infra-next',
+
+		    		}
+		    	});
+		    }
+		    if(window.innerWidth >= 1200) {
+		    	mobInfraSlider = undefined;
+		    	document.querySelector('.infra__content_slider_wr').removeAttribute('style');
+		    	document.querySelectorAll('.infra__content_item').forEach(i => {
+		    		i.removeAttribute('style');	
+		    	});
+		    }
+	    })
+    }
+	
 
 
 
@@ -341,7 +366,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	/*tabSlider*/
     let tabSliderSw;
 
-    if(window.innerWidth < 1200) {
+    if(mainPage) {
+    	if(window.innerWidth < 1200) {
 	    	tabSliderSw = new Swiper('.tabs-slider', {
 	    		slidesPerView: 1,
 	    	});
@@ -349,7 +375,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	    }
 
 	    if(window.innerWidth >= 1200) {
-
+	    	tabSliderSw = undefined;
 	    	document.querySelectorAll('.tabs-slider-wrapper').forEach(i => {
 	    		i.removeAttribute('style');
 	    	});
@@ -370,6 +396,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	    }
 
 	    if(window.innerWidth >= 1200) {
+	    	tabSliderSw = undefined;
 
 	    	document.querySelectorAll('.tabs-slider-wrapper').forEach(i => {
 	    		i.removeAttribute('style');
@@ -382,6 +409,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	    	})
 	    }
     });
+    }
     
 
 
@@ -390,7 +418,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let benSldier;
 
 
-    window.addEventListener('resize', () => {
+    if(ben) {
+    	window.addEventListener('resize', () => {
     	if(window.innerWidth < 1200) {
     		benSldier = new Swiper('.ben__content', {
 	    		slidesPerView: 1,
@@ -404,8 +433,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	    }
 
 	    if (window.innerWidth >= 1200) {
+	    	benSldier = undefined;
 	    	document.querySelector('.ben__content_wr').removeAttribute('style');
-	    	document.querySelector('.ben__content_wr').style.height = 'auto';
 	    	document.querySelectorAll('.ben__item').forEach(i => {
 	    		i.removeAttribute('style');
 	    	})
@@ -424,13 +453,15 @@ document.addEventListener('DOMContentLoaded', () => {
 	    	});
 	    }
 
-	    if (window.innerWidth >=	 1200) {
+	    if (window.innerWidth >= 1200) {
+	    	benSldier = undefined;
 	    	document.querySelector('.ben__content_wr').removeAttribute('style');
-	    	document.querySelector('.ben__content_wr').style.height = 'auto';
 	    	document.querySelectorAll('.ben__item').forEach(i => {
 	    		i.removeAttribute('style');
-	    	})
+	    	});
+
 	    }
+    }
     
 })
 

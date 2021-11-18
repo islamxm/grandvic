@@ -17,3 +17,10 @@
 		line-height: 12px;
 	}	
 }
+
+@media (max-width: 1200px) {
+	.footer {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}

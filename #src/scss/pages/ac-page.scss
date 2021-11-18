@@ -35,5 +35,47 @@
 				text-decoration: underline;
 			}
 		}
+
 	}
+	&__link {
+		display: none;
+	}
+}
+
+
+@media (max-width: 1200px) {
+
+	.ac {
+		padding-left: 0;
+		padding-top: 70px;
+		&__list {
+			gap: 0;
+
+		}
+
+		&__item {
+			max-width: 100%;
+			width: 100%;
+			margin-bottom: 50px;
+
+			&_img {
+				width: 100%;
+				object-fit: contain;
+			}
+
+			&_link {
+				font-size: 18px;
+				line-height: 22px;
+
+			}
+		}
+
+		&__link {
+			font-weight: 300;
+			font-size: 16px;
+			line-height: 20px;
+			text-decoration: underline;
+		}
+	}
+
 }
