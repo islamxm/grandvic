@@ -29,6 +29,9 @@
 	&__tabs {
 		display: flex;
 		justify-content: center;
+		overflow: visible !important;
+		flex-wrap: nowrap;
+
 	}
 
 	&__tab {
@@ -37,6 +40,7 @@
 		margin: 0 20px;
 		padding-bottom: 16px;
 		cursor: pointer;
+		width: auto;
 
 		position: relative;
 
@@ -163,6 +167,18 @@
 
 		&__tabs {
 			justify-content: space-between;
+			flex-wrap: nowrap;
+
+			&_slider {
+				width: 150px !important;
+				overflow: visible;
+				margin-left: 0;
+			}
+		}
+
+		&__tab {
+			text-align: center;
+			width: 100%;
 		}
 
 		&__body {

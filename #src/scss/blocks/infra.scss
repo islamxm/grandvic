@@ -36,6 +36,7 @@
 		transition: all .3s ease;
 		position: relative;
 		cursor: pointer;
+		width: auto;
 
 		&:after {
 			position: absolute;
@@ -157,6 +158,19 @@
 
 		&__title {
 
+		}
+
+		&__tabs {
+			
+			&_slider {
+				width: 160px !important;
+			overflow: visible;
+			margin-left: 0;
+			}
+		}
+
+		&__tab {
+			text-align: center;
 		}
 
 		&__mob_descr {

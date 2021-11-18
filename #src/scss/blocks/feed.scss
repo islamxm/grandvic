@@ -101,12 +101,7 @@
 
 @media (max-width: 1200px) {
 	.feed {
-		padding: 0 35px;
-		position: absolute;
-		bottom: 4px;
-		left: 0;
-		width: 100%;
-		z-index: 100000;
+		padding-left: 0;
 		
 
 		&__title {
@@ -135,6 +130,10 @@
 
 			&_tel {
 				width: 100%;
+			}
+			&_btn {
+				width: 100%;
+				text-align: center;
 			}
 		}
 	}
