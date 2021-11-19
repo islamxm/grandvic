@@ -357,6 +357,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	if(burgerMenu) {
 		burgerBtn.addEventListener('click', () => {
 			burgerMenu.classList.toggle('burger-open');
+			burgerBtn.classList.toggle('burger-open');
 		});
 	}
 
@@ -462,6 +463,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	    }
     }
+
     
 })
 
