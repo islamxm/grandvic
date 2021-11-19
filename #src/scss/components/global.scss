@@ -51,6 +51,17 @@ body {
     font-weight: 400;
 }
 
+.aside__up {
+    width: 260px;
+    flex: 0 0 auto;
+}
+
+@media (max-width: 1200px) {
+    .aside__up {
+        display: none;
+    }
+}
+
 
 
 

@@ -818,6 +818,18 @@ body {
   font-weight: 400;
 }
 
+.aside__up {
+  width: 260px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .aside__up {
+    display: none;
+  }
+}
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -895,8 +907,7 @@ body {
   max-height: 790px;
   -webkit-box-shadow: 2px 0px 6px rgba(91, 91, 91, 0.1);
           box-shadow: 2px 0px 6px rgba(91, 91, 91, 0.1);
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   background-color: #fff;
